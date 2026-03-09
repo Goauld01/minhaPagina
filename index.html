@@ -1,306 +1,415 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/engTele.png" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/engTele.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    <!-- Fontes Modernas: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css">
-  <title>Fernando C Pereira</title>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Fernando C. Pereira | Full Stack Developer</title>
+  </head>
 
-<body>
+  <body>
+    <!-- Botão de Tema Fixado -->
+    <button class="theme-toggle" aria-label="Alternar Tema" id="theme-btn">
+      <ion-icon name="moon-outline" id="theme-icon"></ion-icon>
+    </button>
 
-  <header class="header">
-    <div class="nome">
-      <h1>Fernando Pereira</h1>
-      <p>Engenheiro de Telecomunicações</p>
+    <div class="page-background">
+      <div class="gradient-sphere sphere-1"></div>
+      <div class="gradient-sphere sphere-2"></div>
     </div>
-  </header>
 
-  <main class="container">
-
-    <section class="right-aside">
-
-      <p>
-        Programador e engenheiro com foco em desenvolvimento web full stack, destaco-me por aplicar raciocínio
-        analítico e domínio de tecnologias modernas na criação de soluções digitais eficientes, seguras e orientadas à
-        experiência do usuário.
-      </p>
-
-      <div class="contact">
-        <h2>Contatos</h2>
-        <div class="contact-links">
-          <a href="https://www.linkedin.com/in/fernando-da-cruz-pereira-80657320/" target="_blank"><ion-icon
-              class="link" name="logo-linkedin"></ion-icon></a>
-          <a href="https://github.com/Goauld01"><ion-icon class="link" name="logo-github"></ion-icon></a>
-          <a href="mailto:fernandocp.eng@outlook.com"><ion-icon class="link" name="mail-outline"></ion-icon></a>
-        </div>
-      </div>
-
-    </section>
-
-    <article class="content">
-      <section id="about">
-        <h2>Sobre</h2>
-        <div class="about">
-          <p>
-            Olá, sou Fernando da Cruz Pereira, formado em Engenharia de Telecomunicações e em transição de carreira para
-            o Desenvolvimento Web Full Stack. Tenho experiência docente e venho direcionando minha atuação para
-            tecnologia, com foco em construção de soluções digitais.
-          </p>
-          <p>
-            Estou consolidando competências em HTML, CSS e JavaScript, com prática em Node.js e Git. Trabalho com bancos
-            de dados relacionais (MySQL, PostgreSQL) e NoSQL (MongoDB), mantendo versionamento e colaboração via GitHub.
-          </p>
-          <p>
-            Tenho facilidade para aprender novas tecnologias, resolver problemas com organização e priorizar a
-            experiência do usuário. Busco unir pensamento analítico e prática de desenvolvimento para entregar produtos
-            funcionais e de qualidade.
-          </p>
-          <p>
-            Ofereço serviços de desenvolvimento e manutenção de sites, criação de landing pages responsivas, integração
-            de APIs e automação de processos. Minha vivência na área educacional fortaleceu minha comunicação, empatia e
-            comprometimento com prazos e excelência.
-          </p>
-
-        </div>
-      </section>
-
-      <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-          <div class="skill-category">
-            <h3>Atendimento e Comunicação</h3>
-            <ul class="skill-list">
-              <li>Atendimento ao cliente com clareza, cordialidade e foco na solução de demandas</li>
-              <li>Boa comunicação interpessoal e trabalho em equipe</li>
-            </ul>
+    <main class="container">
+      <!-- Sidebar com Perfil Fixo no Desktop -->
+      <aside class="sidebar glass-panel">
+        <div class="profile-header">
+          <div class="profile-avatar">
+            <img src="assets/engTele.png" alt="Fernando Pereira" />
           </div>
-
-          <div class="skill-category">
-            <h3>Administração e Organização</h3>
-            <ul class="skill-list">
-              <li>Organização de rotinas administrativas e suporte operacional</li>
-              <li>Responsabilidade, pontualidade e proatividade no ambiente de trabalho</li>
-            </ul>
-          </div>
-
-          <div class="skill-category">
-            <h3>Ferramentas e Tecnologias</h3>
-            <ul class="skill-list">
-              <li>Pacote Office (Word, Excel, PowerPoint)</li>
-              <li>Windows e Linux</li>
-              <li>Facilidade em aprender novas tecnologias e sistemas</li>
-            </ul>
-          </div>
-
-          <div class="skill-category">
-            <h3>Infraestrutura de Redes</h3>
-            <ul class="skill-list">
-              <li>Configuração de rede</li>
-              <li>Cabeamento estruturado</li>
-              <li>Roteadores e switches</li>
-            </ul>
-          </div>
-
-          <div class="skill-category">
-            <h3>Desenvolvimento Web</h3>
-            <ul class="skill-list">
-              <li>Fundamentos Full Stack</li>
-              <li>Front-end: HTML, CSS, JavaScript</li>
-              <li>Back-end: conceitos básicos</li>
-            </ul>
+          <div class="profile-text">
+            <h1>Fernando Pereira</h1>
+            <h2>Engenheiro & Desenvolvedor</h2>
           </div>
         </div>
-      </section>
 
-      <section id="experience">
-        <h2>Experiência Profissional</h2>
-        <div class="experience-container">
-          <div class="experience-card">
-            <div class="experience-head">
-              <h3>Professor E.B.T.T.</h3>
-              <div class="experience-entry">
-                <p><span>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo</span></p>
-                <p>05/2022 - 12/2024</p>
-                <p>02/2018 - 06/2019</p>
-                <p>Presidente Epitácio - SP</p>
+        <div class="profile-bio">
+          <p>
+            Programador e engenheiro com foco em desenvolvimento web full stack.
+            Destaco-me por aplicar raciocínio analítico e tecnologias modernas
+            na criação de soluções digitais eficientes, seguras e orientadas à
+            experiência do usuário.
+          </p>
+        </div>
+
+        <div class="contact">
+          <h3>Contatos</h3>
+          <div class="contact-links">
+            <a
+              href="https://www.linkedin.com/in/fernando-da-cruz-pereira-80657320/"
+              target="_blank"
+              aria-label="LinkedIn"
+              class="social-btn"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a
+              href="https://github.com/Goauld01"
+              target="_blank"
+              aria-label="GitHub"
+              class="social-btn"
+            >
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a
+              href="mailto:fernandocp.eng@outlook.com"
+              aria-label="Email"
+              class="social-btn"
+            >
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navegação Interna -->
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#academic">Formação</a></li>
+            <li><a href="#certifications">Certificações</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <article class="content">
+        <!-- Sobre -->
+        <section id="about" class="content-section">
+          <h2 class="section-title">Sobre Mim</h2>
+          <div class="about glass-card text-block">
+            <p>
+              Olá, sou <strong>Fernando da Cruz Pereira</strong>, formado em
+              Engenharia de Telecomunicações e em transição de carreira para o
+              <strong>Desenvolvimento Web Full Stack</strong>. Tenho experiência
+              docente e venho direcionando minha atuação para a tecnologia.
+            </p>
+            <p>
+              Estou consolidando competências em HTML, CSS e JavaScript, com
+              prática em Node.js e Git. Trabalho com bancos de dados relacionais
+              (MySQL, PostgreSQL) e NoSQL (MongoDB), mantendo versionamento e
+              colaboração via GitHub.
+            </p>
+            <p>
+              Tenho facilidade para aprender novas tecnologias, resolver
+              problemas com organização e priorizar a experiência do usuário.
+              Busco unir pensamento analítico e prática de desenvolvimento para
+              entregar produtos funcionais e de qualidade.
+            </p>
+            <p>
+              Ofereço serviços de desenvolvimento e manutenção de sites, criação
+              de landing pages responsivas, integração de APIs e automação de
+              processos.
+            </p>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="content-section">
+          <h2 class="section-title">Skills & Competências</h2>
+
+          <div class="skills-grid">
+            <div class="glass-card skill-card">
+              <div class="skill-icon">
+                <ion-icon name="code-slash-outline"></ion-icon>
               </div>
+              <h3>Desenvolvimento Web</h3>
+              <ul>
+                <li>Front-end: HTML5, CSS3, JavaScript moderno</li>
+                <li>Back-end: Fundamentos de Node.js</li>
+                <li>Bancos de Dados SQL e NoSQL</li>
+              </ul>
             </div>
-            <div class="experience-details">
-              <ul class="experience-tasks">
-                <li>
-                  Atuei como professor no ensino médio, ministrando disciplinas de ciências exatas como matemática,
-                  física e introdução à tecnologia.
-                </li>
 
-                <li>Planejei e conduzi aulas teóricas e práticas com metodologias ativas e
-                  ferramentas digitais.</li>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+              </div>
+              <h3>Infraestrutura / Redes</h3>
+              <ul>
+                <li>Configuração de Redes</li>
+                <li>Cabeamento Estruturado</li>
+                <li>Roteadores e Switches</li>
+              </ul>
+            </div>
 
-                <li>
-                  Desenvolvi avaliações, organizei projetos integradores e acompanhei o progresso dos estudantes de
-                  forma individualizada.
-                </li>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">
+                <ion-icon name="chatbubbles-outline"></ion-icon>
+              </div>
+              <h3>Comunicação & Soft Skills</h3>
+              <ul>
+                <li>Clareza e empatia no atendimento</li>
+                <li>Experiência didática e instrucional</li>
+                <li>Foco em soluções de demandas</li>
+              </ul>
+            </div>
 
-                <li>
-                  Também participei da elaboração de planos de ensino, reuniões pedagógicas e atividades que estimularam
-                  o raciocínio lógico, a autonomia e a aprendizagem significativa.
-                </li>
-
-                <li>
-                  Trabalhei para promover um ambiente inclusivo, participativo e alinhado ao desenvolvimento de
-                  competências cognitivas e socioemocionais.
-                </li>
+            <div class="glass-card skill-card">
+              <div class="skill-icon">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
+              <h3>Administração & Ferramentas</h3>
+              <ul>
+                <li>Organização de rotinas operacionais</li>
+                <li>Pacote Office, Windows e Linux</li>
+                <li>Agilidade e autodidatismo</li>
               </ul>
             </div>
           </div>
+        </section>
 
-          <div class="experience-card">
-            <div class="experience-head">
-              <h3>Torneiro Mecânico</h3>
-              <div class="experience-entry">
-                <p><span>Zanardo Válvulas</span></p>
-                <p>1997 - 2005</p>
-                <p>Araçatuba - SP</p>
+        <!-- Experiência Profissional -->
+        <section id="experience" class="content-section">
+          <h2 class="section-title">Experiência Profissional</h2>
+
+          <div class="timeline">
+            <div class="timeline-item glass-card hover-glow">
+              <div class="timeline-meta">
+                <h3>Professor E.B.T.T.</h3>
+                <span class="timeline-company"
+                  >Instituto Federal de SP (IFSP)</span
+                >
+                <span class="timeline-date"
+                  >Mai 2022 - Dez 2024 | Fev 2018 - Jun 2019</span
+                >
+                <span class="timeline-location">Presidente Epitácio - SP</span>
+              </div>
+              <div class="timeline-content text-block">
+                <ul>
+                  <li>
+                    Professor no ensino médio, ministrando matemática, física e
+                    introdução à tecnologia.
+                  </li>
+                  <li>
+                    Planejei e conduzi aulas com metodologias ativas e digitais.
+                  </li>
+                  <li>
+                    Organizei projetos integradores e acompanhamento
+                    individualizado.
+                  </li>
+                  <li>
+                    Foco em raciocínio lógico, autonomia do aluno e inclusão.
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="experience-details">
-              <ul class="experience-tasks">
-                <li class="experience-task">
-                  Atuei na operação e ajuste de tornos mecânicos e equipamentos de usinagem, com foco na fabricação e
-                  acabamento de componentes industriais.
-                </li>
-                <li class="experience-task">
-                  Realizava leitura e interpretação de desenhos técnicos para execução precisa das peças, garantindo
-                  qualidade e conformidade com os padrões estabelecidos.
-                </li>
 
-                <li>
-                  Desenvolvi habilidades técnicas e atenção a detalhes, fundamentais para processos de produção
-                  mecânica.
-                </li>
+            <div class="timeline-item glass-card hover-glow">
+              <div class="timeline-meta">
+                <h3>Torneiro Mecânico</h3>
+                <span class="timeline-company">Zanardo Válvulas</span>
+                <span class="timeline-date">1997 - 2005</span>
+                <span class="timeline-location">Araçatuba - SP</span>
+              </div>
+              <div class="timeline-content text-block">
+                <ul>
+                  <li>
+                    Operação e ajuste de tornos mecânicos e usinagem de peças
+                    industriais.
+                  </li>
+                  <li>
+                    Leitura e interpretação de desenhos técnicos com precisão
+                    milimétrica.
+                  </li>
+                  <li>
+                    Rigoroso controle de qualidade e conformidade com padrões de
+                    projeto.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Formação -->
+        <section id="academic" class="content-section">
+          <h2 class="section-title">Formação Acadêmica</h2>
+
+          <div class="academic-grid">
+            <div class="academic-card glass-card hover-glow">
+              <div class="academic-icon">
+                <ion-icon name="school-outline"></ion-icon>
+              </div>
+              <div class="academic-details">
+                <h3>Doutorado e Mestrado em Engenharia Elétrica</h3>
+                <span class="academic-inst">UNESP - Ilha Solteira (SP)</span>
+              </div>
+            </div>
+
+            <div class="academic-card glass-card hover-glow">
+              <div class="academic-icon">
+                <ion-icon name="library-outline"></ion-icon>
+              </div>
+              <div class="academic-details">
+                <h3>Graduação em Engenharia de Telecomunicações</h3>
+                <span class="academic-inst">UNISALESIANO - Araçatuba (SP)</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Certificações -->
+        <section id="certifications" class="content-section">
+          <h2 class="section-title">Certificações</h2>
+
+          <div class="certifications-grid">
+            <a
+              class="cert-card glass-card hover-glow"
+              href="https://portalhashtag.com/certificado-hashtag/1754320891073x924385772243368800"
+              target="_blank"
+            >
+              <div class="cert-icon html-css">
+                <ion-icon name="logo-html5"></ion-icon>
+              </div>
+              <div class="cert-info">
+                <h3>HTML & CSS Impressionador</h3>
+                <span class="cert-date">Ago 2025</span>
+              </div>
+            </a>
+
+            <a
+              class="cert-card glass-card hover-glow"
+              href="https://portalhashtag.com/certificado-hashtag/1756760495687x447062937559105540"
+              target="_blank"
+            >
+              <div class="cert-icon fullstack">
+                <ion-icon name="layers-outline"></ion-icon>
+              </div>
+              <div class="cert-info">
+                <h3>Full Stack Impressionador</h3>
+                <span class="cert-date">Set 2025</span>
+              </div>
+            </a>
+
+            <a
+              class="cert-card glass-card hover-glow"
+              href="https://portalhashtag.com/certificado-hashtag/1758636572290x211939096781520670"
+              target="_blank"
+            >
+              <div class="cert-icon js">
+                <ion-icon name="logo-javascript"></ion-icon>
+              </div>
+              <div class="cert-info">
+                <h3>JavaScript Impressionador</h3>
+                <span class="cert-date">Set 2025</span>
+              </div>
+            </a>
+
+            <a
+              class="cert-card glass-card hover-glow"
+              href="https://portalhashtag.com/certificado-hashtag/1763739715533x627085106736267300"
+              target="_blank"
+            >
+              <div class="cert-icon frontend">
+                <ion-icon name="desktop-outline"></ion-icon>
+              </div>
+              <div class="cert-info">
+                <h3>Front End Impressionador</h3>
+                <span class="cert-date">Nov 2025</span>
+              </div>
+            </a>
+
+            <a
+              class="cert-card glass-card hover-glow"
+              href="https://portalhashtag.com/certificado-hashtag/1762894300583x659876099755524000"
+              target="_blank"
+            >
+              <div class="cert-icon figma">
+                <ion-icon name="logo-figma"></ion-icon>
+              </div>
+              <div class="cert-info">
+                <h3>Figma - Aplicações Práticas</h3>
+                <span class="cert-date">Nov 2025</span>
+              </div>
+            </a>
+
+            <a
+              class="cert-card glass-card hover-glow"
+              href="https://portalhashtag.com/certificado-hashtag/1763739714213x128131324951658500"
+              target="_blank"
+            >
+              <div class="cert-icon softskill">
+                <ion-icon name="people-outline"></ion-icon>
+              </div>
+              <div class="cert-info">
+                <h3>Comunicação Eficaz</h3>
+                <span class="cert-date">Nov 2025</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Idiomas -->
+        <section id="language" class="content-section">
+          <h2 class="section-title">Idiomas</h2>
+          <div class="language-grid">
+            <div class="lang-card glass-card">
+              <h3>Português</h3>
+              <span class="lang-level">Nativo</span>
+            </div>
+            <div class="lang-card glass-card">
+              <h3>Inglês</h3>
+              <span class="lang-level">Intermediário</span>
+              <ul class="lang-details text-block">
+                <li>Leitura & Compreensão: B1</li>
+                <li>Escrita & Conversação: A2</li>
               </ul>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </article>
+    </main>
 
-      <section id="academic">
-        <h2>Formação Acadêmica</h2>
-        <div class="academic-container">
-          <div class="academic-entry">
-            <div class="academic-institution">
-              <h3>Universidade Estadual Paulista - UNESP</h3>
-              <p>Ilha Solteira - SP</p>
-            </div>
-            <div class="academic-degree">
-              <p>Doutorado em Engenharia Elétrica</p>
-              <p>Mestrado em Engenharia Elétrica</p>
-            </div>
-          </div>
+    <script>
+      const themeBtn = document.getElementById("theme-btn");
+      const themeIcon = document.getElementById("theme-icon");
+      const body = document.body;
 
-          <div class="academic-entry">
-            <div class="academic-institution">
-              <h3>Centro Universitário Católico Auxilium - UNISALESIANO</h3>
-              <p>Araçatuba - SP</p>
-            </div>
-            <div class="academic-degree">
-              <p>Graduação em Engenharia de Telecomunicações</p>
-            </div>
-          </div>
-        </div>
+      // Restaura o tema salvo
+      const savedTheme = localStorage.getItem("portfolio-theme");
+      if (savedTheme === "light") {
+        body.classList.add("light-theme");
+        themeIcon.setAttribute("name", "sunny-outline");
+      }
 
-      </section>
+      themeBtn.addEventListener("click", () => {
+        body.classList.toggle("light-theme");
+        if (body.classList.contains("light-theme")) {
+          localStorage.setItem("portfolio-theme", "light");
+          themeIcon.setAttribute("name", "sunny-outline");
+        } else {
+          localStorage.setItem("portfolio-theme", "dark");
+          themeIcon.setAttribute("name", "moon-outline");
+        }
+      });
+    </script>
 
-      <section id="certifications">
-        <h2>Certificações</h2>
-        <div class="certifications-container">
-
-          <a class="certification-card"
-            href="https://portalhashtag.com/certificado-hashtag/1754320891073x924385772243368800" target="_blank">
-            <h3>HTML & CSS Impressionador</h3>
-            <div class="certification-info">
-              <p>Data de conclusão: 04/08/2025</p>
-              <p>ID Verificação: HTMFER1754320891</p>
-            </div>
-          </a>
-
-          <a class="certification-card"
-            href="https://portalhashtag.com/certificado-hashtag/1756760495687x447062937559105540" target="_blank">
-            <h3>Full Stack Impressionador</h3>
-            <div class="certification-info">
-              <p>Data de conclusão: 01/09/2025</p>
-              <p>ID Verificação: FULFER1756760496</p>
-            </div>
-          </a>
-
-          <a class="certification-card"
-            href="https://portalhashtag.com/certificado-hashtag/1758636572290x211939096781520670" target="_blank">
-            <h3>JavaScript Impressionador</h3>
-            <div class="certification-info">
-              <p>Data de conclusão: 23/09/2025</p>
-              <p>ID Verificação: JAVFER1758636572</p>
-            </div>
-          </a>
-
-
-
-          <a class="certification-card"
-            href="https://portalhashtag.com/certificado-hashtag/1763739715533x627085106736267300" target="_blank">
-            <h3>Front End Impressionador</h3>
-            <div class="certification-info">
-              <p>Data de conclusão: 21/11/2025</p>
-              <p>ID Verificação: FROFER1763739715</p>
-            </div>
-          </a>
-
-          <a class="certification-card"
-            href="https://portalhashtag.com/certificado-hashtag/1762894300583x659876099755524000" target="_blank">
-            <h3>Figma - Aplicações Práticas</h3>
-            <div class="certification-info">
-              <p>Data de conclusão: 11/11/2025</p>
-              <p>ID Verificação: FIGFER1762894301</p>
-            </div>
-          </a>
-
-          <a class="certification-card"
-            href="https://portalhashtag.com/certificado-hashtag/1763739714213x128131324951658500" target="_blank">
-            <h3>Comunicação Eficaz</h3>
-            <div class="certification-info">
-              <p>Data de conclusão: 21/11/2025</p>
-              <p>ID Verificação: COMFER1763739714</p>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <section id="language">
-        <h2>Idioma</h2>
-        <ul class="language-list">
-          <li><span>Portugês - Nativo</span></li>
-          <li><span>Inglês - Intermediário</span>
-            <ul class="language-details">
-              <li>Leitura: B1 (Intermediário)</li>
-              <li>Escrita: A2 (Básico)</li>
-              <li>Compreensão oral: B1 (intermediário)</li>
-              <li>Conversação: A2 (Básico)</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-    </article>
-
-  </main>
-
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
